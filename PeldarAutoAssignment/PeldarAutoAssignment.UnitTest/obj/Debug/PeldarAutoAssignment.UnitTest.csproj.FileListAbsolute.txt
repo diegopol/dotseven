@@ -1,0 +1,10 @@
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\bin\Debug\PeldarAutoAssignment.UnitTest.dll
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\bin\Debug\PeldarAutoAssignment.UnitTest.pdb
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\bin\Debug\PeldarAutoAssignment.Core.dll
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\bin\Debug\PeldarAutoAssignment.Core.pdb
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\obj\Debug\PeldarAutoAssignment.UnitTest.csprojResolveAssemblyReference.cache
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\obj\Debug\PeldarAutoAssignment.UnitTest.dll
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\obj\Debug\PeldarAutoAssignment.UnitTest.pdb
+C:\Users\Diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.UnitTest\bin\Debug\HtmlAgilityPack.xml

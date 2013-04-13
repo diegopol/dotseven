@@ -1,0 +1,11 @@
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\PeldarAutoAssignment.Core.dll.config
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\PeldarAutoAssignment.Core.dll
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\PeldarAutoAssignment.Core.pdb
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\EntityFramework.dll
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\EntityFramework.xml
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\obj\Debug\PeldarAutoAssignment.Core.dll
+c:\users\diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\obj\Debug\PeldarAutoAssignment.Core.pdb
+C:\Users\Diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Diego\documents\visual studio 2012\Projects\PeldarAutoAssignment\PeldarAutoAssignment.Core\obj\Debug\PeldarAutoAssignment.Core.csprojResolveAssemblyReference.cache

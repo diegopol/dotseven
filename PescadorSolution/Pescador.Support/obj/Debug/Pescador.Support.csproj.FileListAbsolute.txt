@@ -1,0 +1,5 @@
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Support\bin\Debug\Pescador.Support.dll
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Support\bin\Debug\Pescador.Support.pdb
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Support\obj\Debug\Pescador.Support.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Support\obj\Debug\Pescador.Support.dll
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Support\obj\Debug\Pescador.Support.pdb

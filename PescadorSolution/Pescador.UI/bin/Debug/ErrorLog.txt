@@ -1,0 +1,389 @@
+DateTime: 06/05/2013 12:12:22 p. m.
+
+1º ErrorMessage: Error No controlado en CheckOffersAndBookAsync
+1º ErrorType: Pescador.Support.Exceptions.ConnectionException
+
+2º ErrorMessage: Error no controlado al intentar de Obtener la lista de Camiones.
+2º ErrorType: Pescador.Support.Exceptions.RequestException
+
+3º ErrorMessage: Error no controlado al intentar de parsear la tabla de camiones.
+3º ErrorType: Pescador.Support.Exceptions.ParserException
+
+4º ErrorMessage: Object reference not set to an instance of an object.
+4º ErrorType: System.NullReferenceException
+
+
+#########################################################
+Listado de Camiones
+#########################################################
+
+Placa:SWK013, Conductor:Willam Cardenas, Documento:79711846, Celular:3125668098,Destinos:, Cartagena, Barranquilla, Santa Marta, Buenaventura, Bogotá, Bucaramanga, Medellin, Cali
+
+
+#########################################################
+Get Página Ofertas Base - Parámetros
+#########################################################
+
+paquete_admon/forma/REP_camion.aspx
+
+#########################################################
+Get Página Ofertas Base - Resultado
+#########################################################
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>OI Peldar - Camiones</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../../styles.css" type="text/css" rel="stylesheet">
+		<LINK href="/ig_common/20071/Styles/Office2007Blue/ig_WebGrid.css " type="text/css" rel="Stylesheet">
+		<LINK href="/ig_common/20071/Styles/Office2007Silver/ig_WebGrid.css " type="text/css"
+			rel="Stylesheet">
+	</HEAD>
+	<body XMLNS:igtbl="http://schemas.infragistics.com/ASPNET/WebControls/UltraWebGrid">
+		<form name="Form1" method="post" action="REP_camion.aspx" id="Form1">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM0NjI4MDUyMw9kFgICAQ9kFg4CAQ9kFg4CAQ8PFgIeBFRleHQFDVRyYW5zcG9ydGFkb3JkZAIDDw8WAh8ABQ5UcmFuc2xvZ2lzdGljYWRkAgUPFgIfAAViPGEgaHJlZj0iamF2YXNjcmlwdDphZV9jaGFuZ2VfcHdkKCczMTknLCd1eGMzdmVmb2htY2R3aTU1cmc0bGFwNTUnKTsiPltDYW1iaWFyIHN1IENvbnRyYXNlw7FhXTwvYT5kAgcPDxYCHwAFGDA0LzA1LzIwMTMgMTA6MDc6MzQgcC5tLmRkAgkPDxYCHwBlZGQCCw8PFgIfAAUMMTB4eC4xMC4xMC4xZGQCEw8WAh4HVmlzaWJsZWdkAgUPFgIfAWgWBgICD2QWAgIDD2QWAmYPEA8WBh4NRGF0YVRleHRGaWVsZAUJUFRfbm9tYnJlHg5EYXRhVmFsdWVGaWVsZAUUUFRfaWRfdHJhbnNwb3J0YWRvcmEeC18hRGF0YUJvdW5kZ2QQFWgSQWxhZGRpbiBDYXJnbyBTLkEuFEFsbWFncsOhbiBDYXJnbyBTLkEuCUNhcmdhIFMuQRVDYXJpYmUgZGUgdHJhbnNwb3J0ZXMiQ2F0YWx1w7FhIFRyYW5zcG9ydGUgZGUgQ2FyZ2EgUy5BLgtDbGllbnRlcyBWUB9DT0xPTUJJQU5BIERFIERJU1RSSUJVQ0lPTiBMVERBCkNPTFRBTlFVRVMRQ09MVEFOUVVFUyBTLkEuUyAtQ29tcGHDscOtYSBkZSBkaXN0cmlidWNpw7NuIHkgdHJhbnNwb3J0ZSBTLkEuDiBDT05BTFRSQSBTLkEuKUNPT1AuIENCTkEuIERFIFRSQU5TUE9SVEFET1JFUyAtIENPT1BFQ09MEkNvb3AuIGRlIFJpc2FyYWxkYR9DT09QLiBUUkFOU1BPUlRBRE9SRVMgWklQQVFVSVJBL0Nvb3BlcmF0aXZhIEJ1Z2FsYWdyYW5kZcOxYSBkZSB0cmFuc3BvcnRlcyBMdGRhLkNPT1BFUkFUSVZBIERFIFRSQU5TUE9SVEFET1JFUyBDSVVEQUQgU0XDkU9SQSBCQ29vcGVyYXRpdmEgZGUgdHJhbnNwb3J0YWRvcmVzIGRlIHZvbHF1ZXRlcm9zIGRlIGNhcmdhIGRlIENvbG9tYmlhLkNvb3BlcmF0aXZhIEludGVybmFjaW9uYWwgZGUgVHJhbnNwb3J0ZXMgTHRkYS4sQ09PUEVSQVRJVkEgU0FOVEFOREVSRUFOQSBERSBUUkFOU1BPUlRBRE9SRVM/Q09PUEVSQVRJVkEgVFJBTlNQT1JUQURPUkVTIERFIFZPTFFVRVRFUk9TIERFIENBUkdBIERFIENPTE9NQklBJkNvb3BlcmF0aXZhIFRyYW5zcG9ydGFkb3JlcyBaaXBhcXVpcsOhLENvb3JkaW5hZG9yYSBDb21lcmNpYWwgZGUgQ2FyZ2FzIEMuQy5DLiBTLkEuKkNvb3JkaW5hZG9yYSBJbnRlcm5hY2lvbmFsIGRlIFRyw6FmaWNvcyBTQSVDb29yZGluYWRvcmEgTG9nw61zdGljYSBkZSBUcmFuc3BvcnRlEENPT1RSQU5DSVNFIExUREEqQ29ycG9yYWNpw7NuIENvbG9tYmlhbmEgZGUgTG9nw61zdGljYSBTLkEuGERpbsOhbWljYSBMb2dpc3RpY2EgUy5BLghEaXRyYW5zYQhESVRSQU5TQR5FRFVBUkRPIEJPVEVSTyBTT1RPIFkgQ0lBLkxUREEIRU1QUkVTQTE8RU5DQVJHTyBMT0dJU1RJQ0EgSU5URUdSQUwgLSBTRVJWSUNJTyBERSBUUkFOU1BPUlRFIERFIENBUkdBFUVOVFJFR0EgREUgS0FSR0EgUy5BLhFGRVJSRU1PTFFVRVMgUy5BLhZGTEVURVMgVEVSUkVTVFJFUyBTLkEuDEZPTlRSQU5TQ09PUAtGUkFDT1IgUy5BLiFHUkFOQ09MT01CSUFOQSBERSBUUkFOU1BPUlRFUyBTLkEYR3J1cG8gZW1wcmVzYXJpYWwgTVIgUy5BIEludGVyYW5kaW5hIGRlIFRyYW5zcG9ydGVzIEx0ZGEuHEludGVyY2FyZ3Vlcm9zIEFuZGlub3MgTHRkYS4YSW50ZXJ3b3JsZCBMYW5kIFRyYXNwb3J0C0xBVElOIENBUkdBIUxJTkVBUyBURUNOSUNBUyBERSBDQVJHQU1FTlRPIFMuQQxMSVRFQ0FSIFMuQS4eTG9nw61zdGljYSBkZSBUcmFuc3BvcnRlcyBTLkEuJkxvZ2lzdGljYSBUcmFuc3BvcnRhZG9yYSBkZSBUdWx1YSBTLkEuFE1vdG90cmFuc3BvcnRhciBTLkEuNU9wZXJhY2lvbmVzIFNlcnZpY2lvcyB5IExvZ2lzdGljYXMgZGUgVHJhbnNwb3J0ZSBTLkEuJE9wZXJhZG9yZXMgTG9nw61zdGljb3MgZGUgQ2FyZ2EgUy5BLgtQUk9DQU0gUy5BLg1QUk9OVEVSUkVTVFJFHVByb3BpZXRhcmlvcyBkZSBDYW1pb25lcyBTLkEuGVByb3ZlZWRvciAmIFNlcmNhcmdhIFMuQS4KUm9iZXJjYXJnYRBSb2JlcmNhcmdhIEx0ZGEuClJvbmFsIFMuQS4NU2FuY2FyZ2EgTHRkYQ1TZXJkaWNhciBMdGRhJ1NlcnZpY2lvcyB5IG1vdmltaWVudG9zIGxvZ8Otc3RpY29zIFNBUyBTdXJhbWVyaWNhbmEgZGUgVHJhbnNwb3J0ZXMgUy5BLhRUYW5xdWVzIGRlbCBOb3JkZXN0ZRdUYW5xdWVzIHkgQ2FtaW9uZXMgUy5BLgNUQ0MNVHJhY3RvY2FyIFMuQRFUUkFDVE9DQVJHQSBMVERBLhhUUkFGSUNPIFkgTE9HSVNUSUNBIFMuQS4RVFJBRklDT1MgWSBGTEVURVMJVFJBTlNBUEVDD1RSQU5TQ0FSR08gUy5BLhZUUkFOU0NISVFVSU5RVUlSQSBTLkEuDlRSQU5TQ09MVk9MQ09TFVRSQU5TQ09NRVJJTlRFUiBMVERBLhNUcmFuc2NvbnRhaW5lciBTLkEuE1RyYW5zTG9naXN0aWNhIEx0ZGEZVFJBTlNQLiBHT05aQUxFWiBCRVRBTkNVUiNUcmFuc3BvcnRhZG9yYSBDb21lcmNpYWwgQ29sb21iaWFuYRpUcmFuc3BvcnRhZG9yYSBMw61kZXIgUy5BLhtUUkFOU1BPUlRFUyAzVCBMVERBICAgICAgICAfVHJhbnNwb3J0ZXMgQW5kaW5vcyBkZSBMaXF1aWRvcyVUUkFOU1BPUlRFUyBBUEVSVFVSQSBFQ09OT01JQ0EgUy5BLlMuKVRyYW5zcG9ydGVzIEFwZXJ0dXJhIEVjb27Ds21pY2EgVFJBTlNBUEVDEFRSQU5TUE9SVEVTIEJSSU8SVFJBTlNQT1JURVMgRURJTlNBGCBUUkFOU1BPUlRFUyBFTCBSRVkgTFREQRJUcmFuc3BvcnRlcyBHYW1ib2EnVHJhbnNwb3J0ZXMgSGVybmFuIFJhbWlyZXogJiBNYWNpYSBMdGRhGFRyYW5zcG9ydGVzIEh1bWFkZWEgUy5BLiRUcmFuc3BvcnRlcyBJY2ViZXJnIGRlIENvbG9tYmlhIFMuQS4SVFJBTlNQT1JURVMgSk9BTENPHlRyYW5zcG9ydGVzIExhIEZvcnRhbGV6YSBMdGRhLhxUUkFOU1BPUlRFUyBMT0RJU0NBUkdBIFMuQS5THVRSQU5TUE9SVEVTIExPRElTQ0FSR0EgUy5BLlMuIlRSQU5TUE9SVEVTIExPR0lTVElDT1MgREUgQ09MT01CSUESVFJBTlNQT1JURVMgTU9OUlVCE1RSQU5TUE9SVEVTIE9STyBTQVMeVHJhbnNwb3J0ZXMgUmFwaWRvIE5pZXRvIEx0ZGEuHFRyYW5zcG9ydGVzIFNhbmNoZXogUG9sbyBTLkEPVHJhbnNwb3J0ZXMgVEVWGFRSQU5TUE9SVEVTIFZJR0lBIFMuQS5TLiNUcmFuc3BvcnRlcyB5IFNlcnZpY2lvcyBUcmFuc2VyIFMuQSRUUkFOU1BPUlRFUyBZIFNFUlZJQ0lPUyBUUkFOU0VSIFMuQS4gVmljdG9yaWEgQ2FyZ28gVHJhbnNwb3J0ZXMgTHRkYS4ULS0tVHJhbnNwb3J0YWRvcmEtLS0VaAMxMjECNjgCODQCMzgDMTI2AjQ3AzExOQI0OAMxNTgDMTM0AjMxAjI2AjU5AjI1AzEwMQMxNjECOTkCODYDMTQ1AzE2MwMxNjIDMTMzAzEyMwMxNDYCNTICOTcCNzICNzEDMTUzAjYyAzE1NgI2NAMxMjcDMTEwAjQ5AjgyAzEyMAMxMTcCOTgCNDICOTIDMTQ0Ajc4AzE0OQMxMTUCOTECNzcCODgCMzcCOTMDMTQyAzEyNQI5NgI5NAI3MAMxNDMCNjUCNDECNDADMTQ3AjY3AjY5AjM2AjU0AzEyMgMxMTYDMTQxAjQ0AjUzAjY2AzEzMgMxMjQDMTEzAjg5AzEzNgI1MAMxMzgDMTE0AjI3AjQ2AzE1MgMxMzUDMTE4AjQzAjI5AjM0AjYzAjczAzExMQI1OAI5MAMxNTkDMTM3AzE0MAIyOAMxNjACMzkCODADMTM5AzE1MQMxNTACODECOTUCLTEUKwNoZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQJnZAIDD2QWAgIBD2QWAmYPEGRkFgFmZAIHD2QWAgIBD2QWAgIBDxAPFgYfAgUGbm9tYnJlHwMFB2lkX3pvbmEfBGdkEBU6B0JhdmFyaWELQm90ZXJvIFNvdG8NQ2FzYSBHcmFqYWxlcwtDbGllbnRlcyBWUBBDb2NhQ29sYSAtIEZlbXNhCkNvbHRhbnF1ZXMIQ29uYWx0cmEIQ29vcGVjb2wLQ29vdHJhbnppcGENQ29yZGl0cmFmaWNvcyNDcmlzdGFyIC0gQi90dXJhLUJ1Z2EtTS9sbGluLUMvZ2VuYRNDcmlzdGFyIGV4cG9ydGFjaW9uEENyaXN0YXIgTmFjaW9uYWwIRGl0cmFuc2EKRWN1YWRvciBWUAtFeHAuRW52YXNlcwZFeHAuVlARRkxFVEVTIFRFUlJFU1RSRVMHR3J1cG8gMQdHcnVwbyAyB0dydXBvIDMHR3J1cG8gNAdJY2ViZXJnCkludGVyd29ybGQMTGEgRm9ydGFsZXphB0xpdGVjYXIKTG9kaXNjYXJnYQxMb2dpdHJhbnN0dWwPTWF0ZXJpYXMgUHJpbWFzC05hbCBFbnZhc2VzBk5hbC5WUAhQb3N0b2JvbgZQcm9jYW0IUHJvbG9naXMNUHJvbnRlcnJlc3RyZQhTYW5jYXJnYQxTYW5jaGV6IFBvbG8GU2Fub2ZpBVQuIDNUB1QuIEJyaW8JVC4gRWwgUmV5EVQuIEhlcm5hbiBSYW1pcmV6ClQuIEh1bWFkZWEJVC4gSm9hbGNvA1RDQwNUR0IDVEtTC1RyYWN0b2NhcmdhCVRyYW5zYXBlYw5UcmFuc2NvbHZvbGNvcw5UcmFuc2xvZ2lzdGljYQhVbmlsZXZlcgxVcmJhbm9zIEJ1Z2EQVXJiYW5vcyBFbnZpZ2Fkbw5VcmJhbm9zIFNvYWNoYRJVcmJhbm9zIFppcGFxdWlyw6EMVlAgRVhQIC0gVklQCS0tVG9kYXMtLRU6ATECNTgCMzICMjUCNDMCNDkCNTkCNjkCNjACNjUCNDQCMzkCNDACNTUCMjYBMgIzMAI1MgI4MQI4MgI4MwI4NAI1MwI3OQI4NgI4MAI3OAI2MQI0MQIxNwIzMQIyMwI3NwI4NQI3NAI1NwI1MAIyOAI2OAI3MQI2NgI2NwI3NgI3MAI3NQI1NgI4NwI2NAI2MwI2MgI3MgIyNwI0NwI0NQI0OAI0NgI1NAEwFCsDOmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQI5ZAIJDw8WAh8BaGRkAgsPDxYCHwFnZGQCDQ8PFgIfAWdkZAIPDw8WAh8ABQEyZGQCFQ88KwALAgAPFgweC0FsbG93UGFnaW5nZx4QQ3VycmVudFBhZ2VJbmRleGYeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AgIeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAmQBFCsAEmRkZGRkZGQ8KwAEAQAWAh8BZzwrAAQBABYCHwFnZDwrAAQBABYCHwFnPCsABAEAFgIfAWc8KwAEAQAWAh8BZ2RkPCsABAEAFgIfAWg8KwAEAQAWAh8BaDwrAAQBABYCHwFnFgJmD2QWBAICD2QWHmYPZBYCAgEPDxYCHwAFBjE2MjIwNGRkAgEPDxYCHwAFBiZuYnNwO2RkAgIPDxYCHwAFEzA3LzA1LzIwMTM8QlI+MTQ6MDBkZAIDDw8WAh8ABSpbMTEzUFRFXUJPREVHQSBQVE8gVEVSTUlOQURPIEVOVkFTRVMgQ09HVUFkZAIEDw8WAh8ABSgxMTNHWDEgMTEzR1gxIEJPRCBFTlZBU0VTIEFMUE9QVUxBUiBDQVJUZGQCBQ8PFgIfAAUJQ2FydGFnZW5hZGQCBg8PFgIfAAUKIDEzLjgwOCwwMGRkAgcPDxYCHwAFE1RyYW5zTG9naXN0aWNhIEx0ZGFkZAIIDw8WAh8ABQZTT043MjFkZAIJDw8WAh8ABQtGQUJJTyBQQVJET2RkAgoPDxYCHwAFBzI5OTEzNjhkZAILDw8WAh8ABQozMTMyOTYyMjEyZGQCDA8PFgIfAAUIQXNpZ25hZG9kZAIOD2QWAgIBDw8WAh8BaGRkAhAPZBYCAgEPDxYCHwFoZGQCAw9kFh5mD2QWAgIBDw8WAh8ABQYxNjIyMDVkZAIBDw8WAh8ABQYmbmJzcDtkZAICDw8WAh8ABRMwNy8wNS8yMDEzPEJSPjEzOjAwZGQCAw8PFgIfAAUqWzExM1BURV1CT0RFR0EgUFRPIFRFUk1JTkFETyBFTlZBU0VTIENPR1VBZGQCBA8PFgIfAAUoMTEzR1gxIDExM0dYMSBCT0QgRU5WQVNFUyBBTFBPUFVMQVIgQ0FSVGRkAgUPDxYCHwAFCUNhcnRhZ2VuYWRkAgYPDxYCHwAFCiAxMy44MDgsMDBkZAIHDw8WAh8ABRNUcmFuc0xvZ2lzdGljYSBMdGRhZGQCCA8PFgIfAAUGU1NUODMxZGQCCQ8PFgIfAAUMQ0FSTE9TIE5FSVJBZGQCCg8PFgIfAAUIMTgzOTU0MTJkZAILDw8WAh8ABQozMTA4MjA4OTcxZGQCDA8PFgIfAAUIQXNpZ25hZG9kZAIOD2QWAgIBDw8WAh8BaGRkAhAPZBYCAgEPDxYCHwFoZGRkX4KA9zqRWNYK6zATUv1KwKt0Uis=" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script src="/WebResource.axd?d=f1EcdzGOdxBHprbDpfClNvNrTNO9teS05wjRukgySaaKKklRu8UMwMxOeoz1Cev2uSNQ61lHhrkwjxDC5GRkDpgQSrk1&amp;t=634964401740993768" type="text/javascript"></script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWFQKLnsbNDgL25q7/DALGgaXODAL4nKDDDwKgs8GxAgK7nN/GDALWhf3bBgLx7ppxAozYuIYLAqfB1psFAsKq9LAPAt2TksYJAvj8r9sDApPmzfANArucn5QBArucs+8JAruc990PArDLvq8GAvDy3ugHApPivq8GAruJ3+gH1RNHR6LFNpSTnnsNyT9ta18PX6w=" />
+			
+<script language="javascript">
+function ae_change_pwd(idname,uid) 
+		{ 
+			//alert(idname);
+		
+			var params = "dependent=yes,directories=no,hotkeys=no,menubar=no,personalbar=no,scrollbars=yes,status=yes,titlebar=yes,toolbar=no,width=550,height=250,left=200,top=250";
+			fullurl = "cambio_password.aspx?uid=" + uid + "&id="+idname;
+			wcontainer2  = open ( fullurl, "cambio_pass"+idname, params); 
+		}
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td bgcolor="#3050a3"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr class="bgazul">
+					<td width="55%"><img src="../../images/logo_peldar.gif" width="318" height="57"></td>
+					<td width="45%" align="right"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+							<tr>
+								<td align="right" class="titmodulo">&nbsp;
+									<span id="Encabezado_buzon1_titulo">Transportador</span></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#aabae6"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+				<tr>
+					<td width="93%" class="fondo_rojo"><img src="../../images/bienvenido.gif" width="114" height="19" align="absMiddle">&nbsp;
+						<span id="Encabezado_buzon1_nombre">Translogistica</span>
+						<span class="style2">.&nbsp;
+							<a href="javascript:ae_change_pwd('319','uxc3vefohmcdwi55rg4lap55');">[Cambiar su Contraseña]</a>
+							Bienvenido al sistema de Bolsa de Transporte de O-I PELDAR </span>
+					</td>
+					<td width="7%" align="right"><a href="../../default.aspx"> <img border="0" src="../../images/bt_cerrar.gif" width="100" height="19"></a></td>
+				</tr>
+				<TR>
+					<TD class="fondo_rojo" width="93%">Ultimo ingreso
+						<span id="Encabezado_buzon1_Rfecha" style="font-weight:bold;">04/05/2013 10:07:34 p.m.</span>, como 
+						perfíl de
+						<span id="Encabezado_buzon1_Rrol" style="font-weight:bold;"></span>, desde la 
+						IP&nbsp;
+						<span id="Encabezado_buzon1_RIP" style="font-weight:bold;">10xx.10.10.1</span></TD>
+					<TD align="right" width="7%"></TD>
+				</TR>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+<table id="Encabezado_buzon1_tranportadora" width="100%" height="30" border="0" cellpadding="6" cellspacing="2">
+	<tr align="center" bgcolor="#eaf1ff">
+		<td width="31%"><p><img src="../../images/ico_compras.gif" width="18" height="18" align="absMiddle">
+				<a href="REP_camion.aspx">Camiones</a></p>
+		</td>
+		<td width="31%"><p><img src="../../images/ico_compras.gif" width="18" height="18" align="absMiddle">
+				<a href="REP_camion.aspx?historico=true">Historico</a></p>
+		</td>
+	</tr>
+</table>
+
+<br>
+
+			<table class="GG" width="810" align="center">
+				<TR>
+					<TD>
+						
+					</TD>
+				</TR>
+				<TR>
+					<TD>
+						
+					</TD>
+				</TR>
+				<tr>
+					<td class="titpag" height="25"><span id="titulo">Lista Camiones</span></td>
+				</tr>
+				<TR>
+					<TD height="25">
+						<P align="left">
+						    
+						    <a id="LinkDisponible" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkDisponible&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Ver Camiones Disponibles</a>
+						    &nbsp;&nbsp;
+							<a id="LinkAsignados" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkAsignados&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Ver Camiones Asignados</a></P>
+					</TD>
+				</TR>
+				<TR>
+					<TD>Camiones&nbsp;
+						<span id="cant_reg" style="color:Red;font-weight:bold;">2</span>&nbsp;
+						<a id="LinkTodos" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkTodos&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Ver Todos</a></TD>
+				</TR>
+				<TR>
+					<TD>
+						<P align="center"></P>
+					</TD>
+				</TR>
+				<TR>
+					<TD>
+						<table cellspacing="0" cellpadding="3" align="Center" rules="all" bordercolor="#CCCCCC" border="1" id="Fcamion" style="color:White;background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;border-collapse:collapse;">
+	<tr align="left" style="color:#000066;background-color:White;">
+		<td colspan="16"><span>1</span></td>
+	</tr><tr align="center" style="color:White;background-color:DarkGray;font-weight:bold;">
+		<td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl0','')" style="color:White;">ID</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl1','')" style="color:White;">Fecha y Hora<br>Registro</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl2','')" style="color:White;">Fecha y Horas<br>Requeridas<br>Llegada</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl3','')" style="color:White;">Origenes</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl4','')" style="color:White;">Destino</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl5','')" style="color:White;">Ciudad Destino</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl6','')" style="color:White;">Peso Aprox.</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl7','')" style="color:White;">Transportador<br>Asignado</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl8','')" style="color:White;">Placa Camión</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl9','')" style="color:White;">Conductor</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl10','')" style="color:White;">Cédula<br>Conductor</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl11','')" style="color:White;">N° Celular</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl12','')" style="color:White;">Estado</a></td><td>Detalle</td><td>Cambiar<br>Estado</td><td>Rechazar</td>
+	</tr><tr style="color:#000066;">
+		<td>
+										<span id="Fcamion__ctl3_Rid">162204</span>
+									</td><td>&nbsp;</td><td>07/05/2013<BR>14:00</td><td>[113PTE]BODEGA PTO TERMINADO ENVASES COGUA</td><td>113GX1 113GX1 BOD ENVASES ALPOPULAR CART</td><td>Cartagena</td><td> 13.808,00</td><td>TransLogistica Ltda</td><td>SON721</td><td>FABIO PARDO</td><td>2991368</td><td>3132962212</td><td>Asignado</td><td>
+										<input type="submit" name="Fcamion:_ctl3:Bdetalle" value="Detalle" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Fcamion:_ctl3:Bdetalle&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="Fcamion__ctl3_Bdetalle" class="demo2" />
+									</td><td>
+										
+									</td><td>
+										<input type="submit" name="Fcamion:_ctl3:Brechazar" value="Rechazar" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Fcamion:_ctl3:Brechazar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="Fcamion__ctl3_Brechazar" class="demo5" />
+									</td>
+	</tr><tr style="color:#000066;">
+		<td>
+										<span id="Fcamion__ctl4_Rid">162205</span>
+									</td><td>&nbsp;</td><td>07/05/2013<BR>13:00</td><td>[113PTE]BODEGA PTO TERMINADO ENVASES COGUA</td><td>113GX1 113GX1 BOD ENVASES ALPOPULAR CART</td><td>Cartagena</td><td> 13.808,00</td><td>TransLogistica Ltda</td><td>SST831</td><td>CARLOS NEIRA</td><td>18395412</td><td>3108208971</td><td>Asignado</td><td>
+										<input type="submit" name="Fcamion:_ctl4:Bdetalle" value="Detalle" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Fcamion:_ctl4:Bdetalle&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="Fcamion__ctl4_Bdetalle" class="demo2" />
+									</td><td>
+										
+									</td><td>
+										<input type="submit" name="Fcamion:_ctl4:Brechazar" value="Rechazar" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Fcamion:_ctl4:Brechazar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="Fcamion__ctl4_Brechazar" class="demo5" />
+									</td>
+	</tr><tr align="left" style="color:#000066;background-color:White;">
+		<td colspan="16"><span>1</span></td>
+	</tr>
+</table></TD>
+				</TR>
+				<tr>
+					<td align="center"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>
+
+#########################################################
+Post Link 'Ver Camiones Disponibles' - Parámetros
+#########################################################
+
+__EVENTTARGET=LinkDisponible&__EVENTARGUMENT=&__VIEWSTATE=%2FwEPDwUKMTM0NjI4MDUyMw9kFgICAQ9kFg4CAQ9kFg4CAQ8PFgIeBFRleHQFDVRyYW5zcG9ydGFkb3JkZAIDDw8WAh8ABQ5UcmFuc2xvZ2lzdGljYWRkAgUPFgIfAAViPGEgaHJlZj0iamF2YXNjcmlwdDphZV9jaGFuZ2VfcHdkKCczMTknLCd1eGMzdmVmb2htY2R3aTU1cmc0bGFwNTUnKTsiPltDYW1iaWFyIHN1IENvbnRyYXNlw7FhXTwvYT5kAgcPDxYCHwAFGDA0LzA1LzIwMTMgMTA6MDc6MzQgcC5tLmRkAgkPDxYCHwBlZGQCCw8PFgIfAAUMMTB4eC4xMC4xMC4xZGQCEw8WAh4HVmlzaWJsZWdkAgUPFgIfAWgWBgICD2QWAgIDD2QWAmYPEA8WBh4NRGF0YVRleHRGaWVsZAUJUFRfbm9tYnJlHg5EYXRhVmFsdWVGaWVsZAUUUFRfaWRfdHJhbnNwb3J0YWRvcmEeC18hRGF0YUJvdW5kZ2QQFWgSQWxhZGRpbiBDYXJnbyBTLkEuFEFsbWFncsOhbiBDYXJnbyBTLkEuCUNhcmdhIFMuQRVDYXJpYmUgZGUgdHJhbnNwb3J0ZXMiQ2F0YWx1w7FhIFRyYW5zcG9ydGUgZGUgQ2FyZ2EgUy5BLgtDbGllbnRlcyBWUB9DT0xPTUJJQU5BIERFIERJU1RSSUJVQ0lPTiBMVERBCkNPTFRBTlFVRVMRQ09MVEFOUVVFUyBTLkEuUyAtQ29tcGHDscOtYSBkZSBkaXN0cmlidWNpw7NuIHkgdHJhbnNwb3J0ZSBTLkEuDiBDT05BTFRSQSBTLkEuKUNPT1AuIENCTkEuIERFIFRSQU5TUE9SVEFET1JFUyAtIENPT1BFQ09MEkNvb3AuIGRlIFJpc2FyYWxkYR9DT09QLiBUUkFOU1BPUlRBRE9SRVMgWklQQVFVSVJBL0Nvb3BlcmF0aXZhIEJ1Z2FsYWdyYW5kZcOxYSBkZSB0cmFuc3BvcnRlcyBMdGRhLkNPT1BFUkFUSVZBIERFIFRSQU5TUE9SVEFET1JFUyBDSVVEQUQgU0XDkU9SQSBCQ29vcGVyYXRpdmEgZGUgdHJhbnNwb3J0YWRvcmVzIGRlIHZvbHF1ZXRlcm9zIGRlIGNhcmdhIGRlIENvbG9tYmlhLkNvb3BlcmF0aXZhIEludGVybmFjaW9uYWwgZGUgVHJhbnNwb3J0ZXMgTHRkYS4sQ09PUEVSQVRJVkEgU0FOVEFOREVSRUFOQSBERSBUUkFOU1BPUlRBRE9SRVM%2FQ09PUEVSQVRJVkEgVFJBTlNQT1JUQURPUkVTIERFIFZPTFFVRVRFUk9TIERFIENBUkdBIERFIENPTE9NQklBJkNvb3BlcmF0aXZhIFRyYW5zcG9ydGFkb3JlcyBaaXBhcXVpcsOhLENvb3JkaW5hZG9yYSBDb21lcmNpYWwgZGUgQ2FyZ2FzIEMuQy5DLiBTLkEuKkNvb3JkaW5hZG9yYSBJbnRlcm5hY2lvbmFsIGRlIFRyw6FmaWNvcyBTQSVDb29yZGluYWRvcmEgTG9nw61zdGljYSBkZSBUcmFuc3BvcnRlEENPT1RSQU5DSVNFIExUREEqQ29ycG9yYWNpw7NuIENvbG9tYmlhbmEgZGUgTG9nw61zdGljYSBTLkEuGERpbsOhbWljYSBMb2dpc3RpY2EgUy5BLghEaXRyYW5zYQhESVRSQU5TQR5FRFVBUkRPIEJPVEVSTyBTT1RPIFkgQ0lBLkxUREEIRU1QUkVTQTE8RU5DQVJHTyBMT0dJU1RJQ0EgSU5URUdSQUwgLSBTRVJWSUNJTyBERSBUUkFOU1BPUlRFIERFIENBUkdBFUVOVFJFR0EgREUgS0FSR0EgUy5BLhFGRVJSRU1PTFFVRVMgUy5BLhZGTEVURVMgVEVSUkVTVFJFUyBTLkEuDEZPTlRSQU5TQ09PUAtGUkFDT1IgUy5BLiFHUkFOQ09MT01CSUFOQSBERSBUUkFOU1BPUlRFUyBTLkEYR3J1cG8gZW1wcmVzYXJpYWwgTVIgUy5BIEludGVyYW5kaW5hIGRlIFRyYW5zcG9ydGVzIEx0ZGEuHEludGVyY2FyZ3Vlcm9zIEFuZGlub3MgTHRkYS4YSW50ZXJ3b3JsZCBMYW5kIFRyYXNwb3J0C0xBVElOIENBUkdBIUxJTkVBUyBURUNOSUNBUyBERSBDQVJHQU1FTlRPIFMuQQxMSVRFQ0FSIFMuQS4eTG9nw61zdGljYSBkZSBUcmFuc3BvcnRlcyBTLkEuJkxvZ2lzdGljYSBUcmFuc3BvcnRhZG9yYSBkZSBUdWx1YSBTLkEuFE1vdG90cmFuc3BvcnRhciBTLkEuNU9wZXJhY2lvbmVzIFNlcnZpY2lvcyB5IExvZ2lzdGljYXMgZGUgVHJhbnNwb3J0ZSBTLkEuJE9wZXJhZG9yZXMgTG9nw61zdGljb3MgZGUgQ2FyZ2EgUy5BLgtQUk9DQU0gUy5BLg1QUk9OVEVSUkVTVFJFHVByb3BpZXRhcmlvcyBkZSBDYW1pb25lcyBTLkEuGVByb3ZlZWRvciAmIFNlcmNhcmdhIFMuQS4KUm9iZXJjYXJnYRBSb2JlcmNhcmdhIEx0ZGEuClJvbmFsIFMuQS4NU2FuY2FyZ2EgTHRkYQ1TZXJkaWNhciBMdGRhJ1NlcnZpY2lvcyB5IG1vdmltaWVudG9zIGxvZ8Otc3RpY29zIFNBUyBTdXJhbWVyaWNhbmEgZGUgVHJhbnNwb3J0ZXMgUy5BLhRUYW5xdWVzIGRlbCBOb3JkZXN0ZRdUYW5xdWVzIHkgQ2FtaW9uZXMgUy5BLgNUQ0MNVHJhY3RvY2FyIFMuQRFUUkFDVE9DQVJHQSBMVERBLhhUUkFGSUNPIFkgTE9HSVNUSUNBIFMuQS4RVFJBRklDT1MgWSBGTEVURVMJVFJBTlNBUEVDD1RSQU5TQ0FSR08gUy5BLhZUUkFOU0NISVFVSU5RVUlSQSBTLkEuDlRSQU5TQ09MVk9MQ09TFVRSQU5TQ09NRVJJTlRFUiBMVERBLhNUcmFuc2NvbnRhaW5lciBTLkEuE1RyYW5zTG9naXN0aWNhIEx0ZGEZVFJBTlNQLiBHT05aQUxFWiBCRVRBTkNVUiNUcmFuc3BvcnRhZG9yYSBDb21lcmNpYWwgQ29sb21iaWFuYRpUcmFuc3BvcnRhZG9yYSBMw61kZXIgUy5BLhtUUkFOU1BPUlRFUyAzVCBMVERBICAgICAgICAfVHJhbnNwb3J0ZXMgQW5kaW5vcyBkZSBMaXF1aWRvcyVUUkFOU1BPUlRFUyBBUEVSVFVSQSBFQ09OT01JQ0EgUy5BLlMuKVRyYW5zcG9ydGVzIEFwZXJ0dXJhIEVjb27Ds21pY2EgVFJBTlNBUEVDEFRSQU5TUE9SVEVTIEJSSU8SVFJBTlNQT1JURVMgRURJTlNBGCBUUkFOU1BPUlRFUyBFTCBSRVkgTFREQRJUcmFuc3BvcnRlcyBHYW1ib2EnVHJhbnNwb3J0ZXMgSGVybmFuIFJhbWlyZXogJiBNYWNpYSBMdGRhGFRyYW5zcG9ydGVzIEh1bWFkZWEgUy5BLiRUcmFuc3BvcnRlcyBJY2ViZXJnIGRlIENvbG9tYmlhIFMuQS4SVFJBTlNQT1JURVMgSk9BTENPHlRyYW5zcG9ydGVzIExhIEZvcnRhbGV6YSBMdGRhLhxUUkFOU1BPUlRFUyBMT0RJU0NBUkdBIFMuQS5THVRSQU5TUE9SVEVTIExPRElTQ0FSR0EgUy5BLlMuIlRSQU5TUE9SVEVTIExPR0lTVElDT1MgREUgQ09MT01CSUESVFJBTlNQT1JURVMgTU9OUlVCE1RSQU5TUE9SVEVTIE9STyBTQVMeVHJhbnNwb3J0ZXMgUmFwaWRvIE5pZXRvIEx0ZGEuHFRyYW5zcG9ydGVzIFNhbmNoZXogUG9sbyBTLkEPVHJhbnNwb3J0ZXMgVEVWGFRSQU5TUE9SVEVTIFZJR0lBIFMuQS5TLiNUcmFuc3BvcnRlcyB5IFNlcnZpY2lvcyBUcmFuc2VyIFMuQSRUUkFOU1BPUlRFUyBZIFNFUlZJQ0lPUyBUUkFOU0VSIFMuQS4gVmljdG9yaWEgQ2FyZ28gVHJhbnNwb3J0ZXMgTHRkYS4ULS0tVHJhbnNwb3J0YWRvcmEtLS0VaAMxMjECNjgCODQCMzgDMTI2AjQ3AzExOQI0OAMxNTgDMTM0AjMxAjI2AjU5AjI1AzEwMQMxNjECOTkCODYDMTQ1AzE2MwMxNjIDMTMzAzEyMwMxNDYCNTICOTcCNzICNzEDMTUzAjYyAzE1NgI2NAMxMjcDMTEwAjQ5AjgyAzEyMAMxMTcCOTgCNDICOTIDMTQ0Ajc4AzE0OQMxMTUCOTECNzcCODgCMzcCOTMDMTQyAzEyNQI5NgI5NAI3MAMxNDMCNjUCNDECNDADMTQ3AjY3AjY5AjM2AjU0AzEyMgMxMTYDMTQxAjQ0AjUzAjY2AzEzMgMxMjQDMTEzAjg5AzEzNgI1MAMxMzgDMTE0AjI3AjQ2AzE1MgMxMzUDMTE4AjQzAjI5AjM0AjYzAjczAzExMQI1OAI5MAMxNTkDMTM3AzE0MAIyOAMxNjACMzkCODADMTM5AzE1MQMxNTACODECOTUCLTEUKwNoZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQJnZAIDD2QWAgIBD2QWAmYPEGRkFgFmZAIHD2QWAgIBD2QWAgIBDxAPFgYfAgUGbm9tYnJlHwMFB2lkX3pvbmEfBGdkEBU6B0JhdmFyaWELQm90ZXJvIFNvdG8NQ2FzYSBHcmFqYWxlcwtDbGllbnRlcyBWUBBDb2NhQ29sYSAtIEZlbXNhCkNvbHRhbnF1ZXMIQ29uYWx0cmEIQ29vcGVjb2wLQ29vdHJhbnppcGENQ29yZGl0cmFmaWNvcyNDcmlzdGFyIC0gQi90dXJhLUJ1Z2EtTS9sbGluLUMvZ2VuYRNDcmlzdGFyIGV4cG9ydGFjaW9uEENyaXN0YXIgTmFjaW9uYWwIRGl0cmFuc2EKRWN1YWRvciBWUAtFeHAuRW52YXNlcwZFeHAuVlARRkxFVEVTIFRFUlJFU1RSRVMHR3J1cG8gMQdHcnVwbyAyB0dydXBvIDMHR3J1cG8gNAdJY2ViZXJnCkludGVyd29ybGQMTGEgRm9ydGFsZXphB0xpdGVjYXIKTG9kaXNjYXJnYQxMb2dpdHJhbnN0dWwPTWF0ZXJpYXMgUHJpbWFzC05hbCBFbnZhc2VzBk5hbC5WUAhQb3N0b2JvbgZQcm9jYW0IUHJvbG9naXMNUHJvbnRlcnJlc3RyZQhTYW5jYXJnYQxTYW5jaGV6IFBvbG8GU2Fub2ZpBVQuIDNUB1QuIEJyaW8JVC4gRWwgUmV5EVQuIEhlcm5hbiBSYW1pcmV6ClQuIEh1bWFkZWEJVC4gSm9hbGNvA1RDQwNUR0IDVEtTC1RyYWN0b2NhcmdhCVRyYW5zYXBlYw5UcmFuc2NvbHZvbGNvcw5UcmFuc2xvZ2lzdGljYQhVbmlsZXZlcgxVcmJhbm9zIEJ1Z2EQVXJiYW5vcyBFbnZpZ2Fkbw5VcmJhbm9zIFNvYWNoYRJVcmJhbm9zIFppcGFxdWlyw6EMVlAgRVhQIC0gVklQCS0tVG9kYXMtLRU6ATECNTgCMzICMjUCNDMCNDkCNTkCNjkCNjACNjUCNDQCMzkCNDACNTUCMjYBMgIzMAI1MgI4MQI4MgI4MwI4NAI1MwI3OQI4NgI4MAI3OAI2MQI0MQIxNwIzMQIyMwI3NwI4NQI3NAI1NwI1MAIyOAI2OAI3MQI2NgI2NwI3NgI3MAI3NQI1NgI4NwI2NAI2MwI2MgI3MgIyNwI0NwI0NQI0OAI0NgI1NAEwFCsDOmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQI5ZAIJDw8WAh8BaGRkAgsPDxYCHwFnZGQCDQ8PFgIfAWdkZAIPDw8WAh8ABQEyZGQCFQ88KwALAgAPFgweC0FsbG93UGFnaW5nZx4QQ3VycmVudFBhZ2VJbmRleGYeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AgIeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAmQBFCsAEmRkZGRkZGQ8KwAEAQAWAh8BZzwrAAQBABYCHwFnZDwrAAQBABYCHwFnPCsABAEAFgIfAWc8KwAEAQAWAh8BZ2RkPCsABAEAFgIfAWg8KwAEAQAWAh8BaDwrAAQBABYCHwFnFgJmD2QWBAICD2QWHmYPZBYCAgEPDxYCHwAFBjE2MjIwNGRkAgEPDxYCHwAFBiZuYnNwO2RkAgIPDxYCHwAFEzA3LzA1LzIwMTM8QlI%2BMTQ6MDBkZAIDDw8WAh8ABSpbMTEzUFRFXUJPREVHQSBQVE8gVEVSTUlOQURPIEVOVkFTRVMgQ09HVUFkZAIEDw8WAh8ABSgxMTNHWDEgMTEzR1gxIEJPRCBFTlZBU0VTIEFMUE9QVUxBUiBDQVJUZGQCBQ8PFgIfAAUJQ2FydGFnZW5hZGQCBg8PFgIfAAUKIDEzLjgwOCwwMGRkAgcPDxYCHwAFE1RyYW5zTG9naXN0aWNhIEx0ZGFkZAIIDw8WAh8ABQZTT043MjFkZAIJDw8WAh8ABQtGQUJJTyBQQVJET2RkAgoPDxYCHwAFBzI5OTEzNjhkZAILDw8WAh8ABQozMTMyOTYyMjEyZGQCDA8PFgIfAAUIQXNpZ25hZG9kZAIOD2QWAgIBDw8WAh8BaGRkAhAPZBYCAgEPDxYCHwFoZGQCAw9kFh5mD2QWAgIBDw8WAh8ABQYxNjIyMDVkZAIBDw8WAh8ABQYmbmJzcDtkZAICDw8WAh8ABRMwNy8wNS8yMDEzPEJSPjEzOjAwZGQCAw8PFgIfAAUqWzExM1BURV1CT0RFR0EgUFRPIFRFUk1JTkFETyBFTlZBU0VTIENPR1VBZGQCBA8PFgIfAAUoMTEzR1gxIDExM0dYMSBCT0QgRU5WQVNFUyBBTFBPUFVMQVIgQ0FSVGRkAgUPDxYCHwAFCUNhcnRhZ2VuYWRkAgYPDxYCHwAFCiAxMy44MDgsMDBkZAIHDw8WAh8ABRNUcmFuc0xvZ2lzdGljYSBMdGRhZGQCCA8PFgIfAAUGU1NUODMxZGQCCQ8PFgIfAAUMQ0FSTE9TIE5FSVJBZGQCCg8PFgIfAAUIMTgzOTU0MTJkZAILDw8WAh8ABQozMTA4MjA4OTcxZGQCDA8PFgIfAAUIQXNpZ25hZG9kZAIOD2QWAgIBDw8WAh8BaGRkAhAPZBYCAgEPDxYCHwFoZGRkX4KA9zqRWNYK6zATUv1KwKt0Uis%3D&__EVENTVALIDATION=%2FwEWFQKLnsbNDgL25q7%2FDALGgaXODAL4nKDDDwKgs8GxAgK7nN%2FGDALWhf3bBgLx7ppxAozYuIYLAqfB1psFAsKq9LAPAt2TksYJAvj8r9sDApPmzfANArucn5QBArucs%2B8JAruc990PArDLvq8GAvDy3ugHApPivq8GAruJ3%2BgH1RNHR6LFNpSTnnsNyT9ta18PX6w%3D
+
+#########################################################
+Post Link 'Ver Camiones Disponibles' - Resultado
+#########################################################
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>OI Peldar - Camiones</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../../styles.css" type="text/css" rel="stylesheet">
+		<LINK href="/ig_common/20071/Styles/Office2007Blue/ig_WebGrid.css " type="text/css" rel="Stylesheet">
+		<LINK href="/ig_common/20071/Styles/Office2007Silver/ig_WebGrid.css " type="text/css"
+			rel="Stylesheet">
+	</HEAD>
+	<body XMLNS:igtbl="http://schemas.infragistics.com/ASPNET/WebControls/UltraWebGrid">
+		<form name="Form1" method="post" action="REP_camion.aspx" id="Form1">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM0NjI4MDUyMw9kFgICAQ9kFg4CAQ9kFg4CAQ8PFgIeBFRleHQFDVRyYW5zcG9ydGFkb3JkZAIDDw8WAh8ABQ5UcmFuc2xvZ2lzdGljYWRkAgUPFgIfAAViPGEgaHJlZj0iamF2YXNjcmlwdDphZV9jaGFuZ2VfcHdkKCczMTknLCd1eGMzdmVmb2htY2R3aTU1cmc0bGFwNTUnKTsiPltDYW1iaWFyIHN1IENvbnRyYXNlw7FhXTwvYT5kAgcPDxYCHwAFGDA0LzA1LzIwMTMgMTA6MDc6MzQgcC5tLmRkAgkPDxYCHwBlZGQCCw8PFgIfAAUMMTB4eC4xMC4xMC4xZGQCEw8WAh4HVmlzaWJsZWdkAgUPFgIfAWgWBgICD2QWAgIDD2QWAmYPEA8WBh4NRGF0YVRleHRGaWVsZAUJUFRfbm9tYnJlHg5EYXRhVmFsdWVGaWVsZAUUUFRfaWRfdHJhbnNwb3J0YWRvcmEeC18hRGF0YUJvdW5kZ2QQFWgSQWxhZGRpbiBDYXJnbyBTLkEuFEFsbWFncsOhbiBDYXJnbyBTLkEuCUNhcmdhIFMuQRVDYXJpYmUgZGUgdHJhbnNwb3J0ZXMiQ2F0YWx1w7FhIFRyYW5zcG9ydGUgZGUgQ2FyZ2EgUy5BLgtDbGllbnRlcyBWUB9DT0xPTUJJQU5BIERFIERJU1RSSUJVQ0lPTiBMVERBCkNPTFRBTlFVRVMRQ09MVEFOUVVFUyBTLkEuUyAtQ29tcGHDscOtYSBkZSBkaXN0cmlidWNpw7NuIHkgdHJhbnNwb3J0ZSBTLkEuDiBDT05BTFRSQSBTLkEuKUNPT1AuIENCTkEuIERFIFRSQU5TUE9SVEFET1JFUyAtIENPT1BFQ09MEkNvb3AuIGRlIFJpc2FyYWxkYR9DT09QLiBUUkFOU1BPUlRBRE9SRVMgWklQQVFVSVJBL0Nvb3BlcmF0aXZhIEJ1Z2FsYWdyYW5kZcOxYSBkZSB0cmFuc3BvcnRlcyBMdGRhLkNPT1BFUkFUSVZBIERFIFRSQU5TUE9SVEFET1JFUyBDSVVEQUQgU0XDkU9SQSBCQ29vcGVyYXRpdmEgZGUgdHJhbnNwb3J0YWRvcmVzIGRlIHZvbHF1ZXRlcm9zIGRlIGNhcmdhIGRlIENvbG9tYmlhLkNvb3BlcmF0aXZhIEludGVybmFjaW9uYWwgZGUgVHJhbnNwb3J0ZXMgTHRkYS4sQ09PUEVSQVRJVkEgU0FOVEFOREVSRUFOQSBERSBUUkFOU1BPUlRBRE9SRVM/Q09PUEVSQVRJVkEgVFJBTlNQT1JUQURPUkVTIERFIFZPTFFVRVRFUk9TIERFIENBUkdBIERFIENPTE9NQklBJkNvb3BlcmF0aXZhIFRyYW5zcG9ydGFkb3JlcyBaaXBhcXVpcsOhLENvb3JkaW5hZG9yYSBDb21lcmNpYWwgZGUgQ2FyZ2FzIEMuQy5DLiBTLkEuKkNvb3JkaW5hZG9yYSBJbnRlcm5hY2lvbmFsIGRlIFRyw6FmaWNvcyBTQSVDb29yZGluYWRvcmEgTG9nw61zdGljYSBkZSBUcmFuc3BvcnRlEENPT1RSQU5DSVNFIExUREEqQ29ycG9yYWNpw7NuIENvbG9tYmlhbmEgZGUgTG9nw61zdGljYSBTLkEuGERpbsOhbWljYSBMb2dpc3RpY2EgUy5BLghEaXRyYW5zYQhESVRSQU5TQR5FRFVBUkRPIEJPVEVSTyBTT1RPIFkgQ0lBLkxUREEIRU1QUkVTQTE8RU5DQVJHTyBMT0dJU1RJQ0EgSU5URUdSQUwgLSBTRVJWSUNJTyBERSBUUkFOU1BPUlRFIERFIENBUkdBFUVOVFJFR0EgREUgS0FSR0EgUy5BLhFGRVJSRU1PTFFVRVMgUy5BLhZGTEVURVMgVEVSUkVTVFJFUyBTLkEuDEZPTlRSQU5TQ09PUAtGUkFDT1IgUy5BLiFHUkFOQ09MT01CSUFOQSBERSBUUkFOU1BPUlRFUyBTLkEYR3J1cG8gZW1wcmVzYXJpYWwgTVIgUy5BIEludGVyYW5kaW5hIGRlIFRyYW5zcG9ydGVzIEx0ZGEuHEludGVyY2FyZ3Vlcm9zIEFuZGlub3MgTHRkYS4YSW50ZXJ3b3JsZCBMYW5kIFRyYXNwb3J0C0xBVElOIENBUkdBIUxJTkVBUyBURUNOSUNBUyBERSBDQVJHQU1FTlRPIFMuQQxMSVRFQ0FSIFMuQS4eTG9nw61zdGljYSBkZSBUcmFuc3BvcnRlcyBTLkEuJkxvZ2lzdGljYSBUcmFuc3BvcnRhZG9yYSBkZSBUdWx1YSBTLkEuFE1vdG90cmFuc3BvcnRhciBTLkEuNU9wZXJhY2lvbmVzIFNlcnZpY2lvcyB5IExvZ2lzdGljYXMgZGUgVHJhbnNwb3J0ZSBTLkEuJE9wZXJhZG9yZXMgTG9nw61zdGljb3MgZGUgQ2FyZ2EgUy5BLgtQUk9DQU0gUy5BLg1QUk9OVEVSUkVTVFJFHVByb3BpZXRhcmlvcyBkZSBDYW1pb25lcyBTLkEuGVByb3ZlZWRvciAmIFNlcmNhcmdhIFMuQS4KUm9iZXJjYXJnYRBSb2JlcmNhcmdhIEx0ZGEuClJvbmFsIFMuQS4NU2FuY2FyZ2EgTHRkYQ1TZXJkaWNhciBMdGRhJ1NlcnZpY2lvcyB5IG1vdmltaWVudG9zIGxvZ8Otc3RpY29zIFNBUyBTdXJhbWVyaWNhbmEgZGUgVHJhbnNwb3J0ZXMgUy5BLhRUYW5xdWVzIGRlbCBOb3JkZXN0ZRdUYW5xdWVzIHkgQ2FtaW9uZXMgUy5BLgNUQ0MNVHJhY3RvY2FyIFMuQRFUUkFDVE9DQVJHQSBMVERBLhhUUkFGSUNPIFkgTE9HSVNUSUNBIFMuQS4RVFJBRklDT1MgWSBGTEVURVMJVFJBTlNBUEVDD1RSQU5TQ0FSR08gUy5BLhZUUkFOU0NISVFVSU5RVUlSQSBTLkEuDlRSQU5TQ09MVk9MQ09TFVRSQU5TQ09NRVJJTlRFUiBMVERBLhNUcmFuc2NvbnRhaW5lciBTLkEuE1RyYW5zTG9naXN0aWNhIEx0ZGEZVFJBTlNQLiBHT05aQUxFWiBCRVRBTkNVUiNUcmFuc3BvcnRhZG9yYSBDb21lcmNpYWwgQ29sb21iaWFuYRpUcmFuc3BvcnRhZG9yYSBMw61kZXIgUy5BLhtUUkFOU1BPUlRFUyAzVCBMVERBICAgICAgICAfVHJhbnNwb3J0ZXMgQW5kaW5vcyBkZSBMaXF1aWRvcyVUUkFOU1BPUlRFUyBBUEVSVFVSQSBFQ09OT01JQ0EgUy5BLlMuKVRyYW5zcG9ydGVzIEFwZXJ0dXJhIEVjb27Ds21pY2EgVFJBTlNBUEVDEFRSQU5TUE9SVEVTIEJSSU8SVFJBTlNQT1JURVMgRURJTlNBGCBUUkFOU1BPUlRFUyBFTCBSRVkgTFREQRJUcmFuc3BvcnRlcyBHYW1ib2EnVHJhbnNwb3J0ZXMgSGVybmFuIFJhbWlyZXogJiBNYWNpYSBMdGRhGFRyYW5zcG9ydGVzIEh1bWFkZWEgUy5BLiRUcmFuc3BvcnRlcyBJY2ViZXJnIGRlIENvbG9tYmlhIFMuQS4SVFJBTlNQT1JURVMgSk9BTENPHlRyYW5zcG9ydGVzIExhIEZvcnRhbGV6YSBMdGRhLhxUUkFOU1BPUlRFUyBMT0RJU0NBUkdBIFMuQS5THVRSQU5TUE9SVEVTIExPRElTQ0FSR0EgUy5BLlMuIlRSQU5TUE9SVEVTIExPR0lTVElDT1MgREUgQ09MT01CSUESVFJBTlNQT1JURVMgTU9OUlVCE1RSQU5TUE9SVEVTIE9STyBTQVMeVHJhbnNwb3J0ZXMgUmFwaWRvIE5pZXRvIEx0ZGEuHFRyYW5zcG9ydGVzIFNhbmNoZXogUG9sbyBTLkEPVHJhbnNwb3J0ZXMgVEVWGFRSQU5TUE9SVEVTIFZJR0lBIFMuQS5TLiNUcmFuc3BvcnRlcyB5IFNlcnZpY2lvcyBUcmFuc2VyIFMuQSRUUkFOU1BPUlRFUyBZIFNFUlZJQ0lPUyBUUkFOU0VSIFMuQS4gVmljdG9yaWEgQ2FyZ28gVHJhbnNwb3J0ZXMgTHRkYS4ULS0tVHJhbnNwb3J0YWRvcmEtLS0VaAMxMjECNjgCODQCMzgDMTI2AjQ3AzExOQI0OAMxNTgDMTM0AjMxAjI2AjU5AjI1AzEwMQMxNjECOTkCODYDMTQ1AzE2MwMxNjIDMTMzAzEyMwMxNDYCNTICOTcCNzICNzEDMTUzAjYyAzE1NgI2NAMxMjcDMTEwAjQ5AjgyAzEyMAMxMTcCOTgCNDICOTIDMTQ0Ajc4AzE0OQMxMTUCOTECNzcCODgCMzcCOTMDMTQyAzEyNQI5NgI5NAI3MAMxNDMCNjUCNDECNDADMTQ3AjY3AjY5AjM2AjU0AzEyMgMxMTYDMTQxAjQ0AjUzAjY2AzEzMgMxMjQDMTEzAjg5AzEzNgI1MAMxMzgDMTE0AjI3AjQ2AzE1MgMxMzUDMTE4AjQzAjI5AjM0AjYzAjczAzExMQI1OAI5MAMxNTkDMTM3AzE0MAIyOAMxNjACMzkCODADMTM5AzE1MQMxNTACODECOTUCLTEUKwNoZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQJnZAIDD2QWAgIBD2QWAmYPEGRkFgFmZAIHD2QWAgIBD2QWAgIBDxAPFgYfAgUGbm9tYnJlHwMFB2lkX3pvbmEfBGdkEBU6B0JhdmFyaWELQm90ZXJvIFNvdG8NQ2FzYSBHcmFqYWxlcwtDbGllbnRlcyBWUBBDb2NhQ29sYSAtIEZlbXNhCkNvbHRhbnF1ZXMIQ29uYWx0cmEIQ29vcGVjb2wLQ29vdHJhbnppcGENQ29yZGl0cmFmaWNvcyNDcmlzdGFyIC0gQi90dXJhLUJ1Z2EtTS9sbGluLUMvZ2VuYRNDcmlzdGFyIGV4cG9ydGFjaW9uEENyaXN0YXIgTmFjaW9uYWwIRGl0cmFuc2EKRWN1YWRvciBWUAtFeHAuRW52YXNlcwZFeHAuVlARRkxFVEVTIFRFUlJFU1RSRVMHR3J1cG8gMQdHcnVwbyAyB0dydXBvIDMHR3J1cG8gNAdJY2ViZXJnCkludGVyd29ybGQMTGEgRm9ydGFsZXphB0xpdGVjYXIKTG9kaXNjYXJnYQxMb2dpdHJhbnN0dWwPTWF0ZXJpYXMgUHJpbWFzC05hbCBFbnZhc2VzBk5hbC5WUAhQb3N0b2JvbgZQcm9jYW0IUHJvbG9naXMNUHJvbnRlcnJlc3RyZQhTYW5jYXJnYQxTYW5jaGV6IFBvbG8GU2Fub2ZpBVQuIDNUB1QuIEJyaW8JVC4gRWwgUmV5EVQuIEhlcm5hbiBSYW1pcmV6ClQuIEh1bWFkZWEJVC4gSm9hbGNvA1RDQwNUR0IDVEtTC1RyYWN0b2NhcmdhCVRyYW5zYXBlYw5UcmFuc2NvbHZvbGNvcw5UcmFuc2xvZ2lzdGljYQhVbmlsZXZlcgxVcmJhbm9zIEJ1Z2EQVXJiYW5vcyBFbnZpZ2Fkbw5VcmJhbm9zIFNvYWNoYRJVcmJhbm9zIFppcGFxdWlyw6EMVlAgRVhQIC0gVklQCS0tVG9kYXMtLRU6ATECNTgCMzICMjUCNDMCNDkCNTkCNjkCNjACNjUCNDQCMzkCNDACNTUCMjYBMgIzMAI1MgI4MQI4MgI4MwI4NAI1MwI3OQI4NgI4MAI3OAI2MQI0MQIxNwIzMQIyMwI3NwI4NQI3NAI1NwI1MAIyOAI2OAI3MQI2NgI2NwI3NgI3MAI3NQI1NgI4NwI2NAI2MwI2MgI3MgIyNwI0NwI0NQI0OAI0NgI1NAEwFCsDOmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAQI5ZAIJDw8WBB8ABQxWZXIgQnVzY2Fkb3IfAWhkZAILDw8WBB8ABRhWZXIgQ2FtaW9uZXMgRGlzcG9uaWJsZXMfAWdkZAINDw8WBB8ABRZWZXIgQ2FtaW9uZXMgQXNpZ25hZG9zHwFnZGQCDw8PFgIfAAUBMWRkAhUPPCsACwIADxYMHgtBbGxvd1BhZ2luZ2ceEEN1cnJlbnRQYWdlSW5kZXhmHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudAIBHglQYWdlQ291bnQCAR4VXyFEYXRhU291cmNlSXRlbUNvdW50AgFkARQrABJkPCsABAEAFgIfAWhkZGRkZDwrAAQBABYCHwFoPCsABAEAFgIfAWg8KwAEAQAWAh8BaDwrAAQBABYCHwFoPCsABAEAFgIfAWg8KwAEAQAWAh8BaGRkPCsABAEAFgIfAWg8KwAEAQAWAh8BaDwrAAQBABYCHwFoFgJmD2QWAgICD2QWHmYPZBYCAgEPDxYCHwAFBjE2MjIwNmRkAgEPDxYCHwAFBiZuYnNwO2RkAgIPDxYCHwAFEzA3LzA1LzIwMTM8QlI+MTM6MTBkZAIDDw8WAh8ABSpbMTEzUFRFXUJPREVHQSBQVE8gVEVSTUlOQURPIEVOVkFTRVMgQ09HVUFkZAIEDw8WAh8ABSgxMTNHWDEgMTEzR1gxIEJPRCBFTlZBU0VTIEFMUE9QVUxBUiBDQVJUZGQCBQ8PFgIfAAUJQ2FydGFnZW5hZGQCBg8PFgIfAAUKIDEzLjgwOCwwMGRkAgcPDxYCHwAFBiZuYnNwO2RkAggPDxYCHwAFBiZuYnNwO2RkAgkPDxYCHwAFBiZuYnNwO2RkAgoPDxYCHwAFBiZuYnNwO2RkAgsPDxYCHwAFBiZuYnNwO2RkAgwPDxYCHwAFC1NpbiBBc2lnbmFyZGQCEA9kFgICAQ8PFgIfAWhkZAIRD2QWAgIBDw8WAh8BaGRkZFw6pEwE6zhts1N3M4BqmZoiJ2q/" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script src="/WebResource.axd?d=f1EcdzGOdxBHprbDpfClNvNrTNO9teS05wjRukgySaaKKklRu8UMwMxOeoz1Cev2uSNQ61lHhrkwjxDC5GRkDpgQSrk1&amp;t=634964401740993768" type="text/javascript"></script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDALtvsSIAwL25q7/DALGgaXODAL4nKDDDwKgs8GxAgLWhf3bBgLx7ppxAozYuIYLAqfB1psFAsKq9LAPArDLvq8GAsTh0LsCGys5URicQn/fLom7O6YZ+ZPDOjg=" />
+			
+<script language="javascript">
+function ae_change_pwd(idname,uid) 
+		{ 
+			//alert(idname);
+		
+			var params = "dependent=yes,directories=no,hotkeys=no,menubar=no,personalbar=no,scrollbars=yes,status=yes,titlebar=yes,toolbar=no,width=550,height=250,left=200,top=250";
+			fullurl = "cambio_password.aspx?uid=" + uid + "&id="+idname;
+			wcontainer2  = open ( fullurl, "cambio_pass"+idname, params); 
+		}
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td bgcolor="#3050a3"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr class="bgazul">
+					<td width="55%"><img src="../../images/logo_peldar.gif" width="318" height="57"></td>
+					<td width="45%" align="right"><table width="100%" border="0" cellspacing="0" cellpadding="10">
+							<tr>
+								<td align="right" class="titmodulo">&nbsp;
+									<span id="Encabezado_buzon1_titulo">Transportador</span></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="#aabae6"><table width="100%" border="0" cellspacing="0" cellpadding="5">
+				<tr>
+					<td width="93%" class="fondo_rojo"><img src="../../images/bienvenido.gif" width="114" height="19" align="absMiddle">&nbsp;
+						<span id="Encabezado_buzon1_nombre">Translogistica</span>
+						<span class="style2">.&nbsp;
+							<a href="javascript:ae_change_pwd('319','uxc3vefohmcdwi55rg4lap55');">[Cambiar su Contraseña]</a>
+							Bienvenido al sistema de Bolsa de Transporte de O-I PELDAR </span>
+					</td>
+					<td width="7%" align="right"><a href="../../default.aspx"> <img border="0" src="../../images/bt_cerrar.gif" width="100" height="19"></a></td>
+				</tr>
+				<TR>
+					<TD class="fondo_rojo" width="93%">Ultimo ingreso
+						<span id="Encabezado_buzon1_Rfecha" style="font-weight:bold;">04/05/2013 10:07:34 p.m.</span>, como 
+						perfíl de
+						<span id="Encabezado_buzon1_Rrol" style="font-weight:bold;"></span>, desde la 
+						IP&nbsp;
+						<span id="Encabezado_buzon1_RIP" style="font-weight:bold;">10xx.10.10.1</span></TD>
+					<TD align="right" width="7%"></TD>
+				</TR>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+<table id="Encabezado_buzon1_tranportadora" width="100%" height="30" border="0" cellpadding="6" cellspacing="2">
+	<tr align="center" bgcolor="#eaf1ff">
+		<td width="31%"><p><img src="../../images/ico_compras.gif" width="18" height="18" align="absMiddle">
+				<a href="REP_camion.aspx">Camiones</a></p>
+		</td>
+		<td width="31%"><p><img src="../../images/ico_compras.gif" width="18" height="18" align="absMiddle">
+				<a href="REP_camion.aspx?historico=true">Historico</a></p>
+		</td>
+	</tr>
+</table>
+
+<br>
+
+			<table class="GG" width="810" align="center">
+				<TR>
+					<TD>
+						
+					</TD>
+				</TR>
+				<TR>
+					<TD>
+						
+					</TD>
+				</TR>
+				<tr>
+					<td class="titpag" height="25"><span id="titulo">Lista Camiones</span></td>
+				</tr>
+				<TR>
+					<TD height="25">
+						<P align="left">
+						    
+						    <a id="LinkDisponible" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkDisponible&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Ver Camiones Disponibles</a>
+						    &nbsp;&nbsp;
+							<a id="LinkAsignados" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkAsignados&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Ver Camiones Asignados</a></P>
+					</TD>
+				</TR>
+				<TR>
+					<TD>Camiones&nbsp;
+						<span id="cant_reg" style="color:Red;font-weight:bold;">1</span>&nbsp;
+						<a id="LinkTodos" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;LinkTodos&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">Ver Todos</a></TD>
+				</TR>
+				<TR>
+					<TD>
+						<P align="center"></P>
+					</TD>
+				</TR>
+				<TR>
+					<TD>
+						<table cellspacing="0" cellpadding="3" align="Center" rules="all" bordercolor="#CCCCCC" border="1" id="Fcamion" style="color:White;background-color:White;border-color:#CCCCCC;border-width:1px;border-style:None;border-collapse:collapse;">
+	<tr align="left" style="color:#000066;background-color:White;">
+		<td colspan="8"><span>1</span></td>
+	</tr><tr align="center" style="color:White;background-color:DarkGray;font-weight:bold;">
+		<td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl0','')" style="color:White;">ID</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl2','')" style="color:White;">Fecha y Horas<br>Requeridas<br>Llegada</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl3','')" style="color:White;">Origenes</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl4','')" style="color:White;">Destino</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl5','')" style="color:White;">Ciudad Destino</a></td><td><a href="javascript:__doPostBack('Fcamion$_ctl2$_ctl6','')" style="color:White;">Peso Aprox.</a></td><td>Detalle</td><td>Cambiar<br>Estado</td>
+	</tr><tr style="color:#000066;">
+		<td>
+										<span id="Fcamion__ctl3_Rid">162206</span>
+									</td><td>07/05/2013<BR>13:10</td><td>[113PTE]BODEGA PTO TERMINADO ENVASES COGUA</td><td>113GX1 113GX1 BOD ENVASES ALPOPULAR CART</td><td>Cartagena</td><td> 13.808,00</td><td>
+										<input type="submit" name="Fcamion:_ctl3:Bdetalle" value="Detalle" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Fcamion:_ctl3:Bdetalle&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="Fcamion__ctl3_Bdetalle" class="demo2" />
+									</td><td>
+										<input type="submit" name="Fcamion:_ctl3:Bcambiar" value="Cambiar" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Fcamion:_ctl3:Bcambiar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" language="javascript" id="Fcamion__ctl3_Bcambiar" class="demo3" />
+									</td>
+	</tr><tr align="left" style="color:#000066;background-color:White;">
+		<td colspan="8"><span>1</span></td>
+	</tr>
+</table></TD>
+				</TR>
+				<tr>
+					<td align="center"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>
+

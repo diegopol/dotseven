@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0ccc360dfb3b4bbb8abe99664fb18461" Name="Diagram1">
+        <EntityTypeShape EntityType="PescadorDB.Destination" Width="1.5" PointX="12.375" PointY="7.125" />
+        <EntityTypeShape EntityType="PescadorDB.Truck" Width="2.875" PointX="16.375" PointY="6.625" />
+        <AssociationConnector Association="PescadorDB.TruckDestinations" />
+        <EntityTypeShape EntityType="PescadorDB.Configuration" Width="1.5" PointX="13.5" PointY="9.375" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

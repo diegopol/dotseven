@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PescadorDBStoreContainer" CdmEntityContainer="PescadorDBEntities">
+    <EntitySetMapping Name="Destinations">
+      <EntityTypeMapping TypeName="PescadorDB.Destination">
+        <MappingFragment StoreEntitySet="Destinations">
+          <ScalarProperty Name="Destination1" ColumnName="Destination" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trucks">
+      <EntityTypeMapping TypeName="PescadorDB.Truck">
+        <MappingFragment StoreEntitySet="Trucks">
+          <ScalarProperty Name="AssignationID" ColumnName="AssignationID" />
+          <ScalarProperty Name="DestinationAssignedID" ColumnName="DestinationAssignedID" />
+          <ScalarProperty Name="DateAssigned" ColumnName="DateAssigned" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="DriverMobilePhone" ColumnName="DriverMobilePhone" />
+          <ScalarProperty Name="DriverDocumentNumber" ColumnName="DriverDocumentNumber" />
+          <ScalarProperty Name="DriveName" ColumnName="DriveName" />
+          <ScalarProperty Name="Plate" ColumnName="Plate" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TruckDestinations" TypeName="PescadorDB.TruckDestinations" StoreEntitySet="TruckDestinations">
+      <EndProperty Name="Truck">
+        <ScalarProperty Name="ID" ColumnName="TruckID" />
+      </EndProperty>
+      <EndProperty Name="Destination">
+        <ScalarProperty Name="ID" ColumnName="DestinationID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Configurations">
+      <EntityTypeMapping TypeName="PescadorDB.Configuration">
+        <MappingFragment StoreEntitySet="Configuration">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ServiceRetrySeconds" ColumnName="ServiceRetrySeconds" />
+          <ScalarProperty Name="ServiceTimeout" ColumnName="ServiceTimeout" />
+          <ScalarProperty Name="ServiceUrl" ColumnName="ServiceUrl" />
+          <ScalarProperty Name="ServicePassword" ColumnName="ServicePassword" />
+          <ScalarProperty Name="ServiceUserName" ColumnName="ServiceUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

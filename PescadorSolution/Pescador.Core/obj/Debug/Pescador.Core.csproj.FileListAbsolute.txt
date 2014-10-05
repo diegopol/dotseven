@@ -1,0 +1,13 @@
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\Pescador.Core.dll.config
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\Pescador.Core.dll
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\Pescador.Core.pdb
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\Pescador.Support.dll
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\Pescador.Support.pdb
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\obj\Debug\Pescador.Core.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\obj\Debug\Pescador.Core.dll
+C:\Users\Diego\Desktop\Pescador\PescadorSolution\Pescador.Core\obj\Debug\Pescador.Core.pdb

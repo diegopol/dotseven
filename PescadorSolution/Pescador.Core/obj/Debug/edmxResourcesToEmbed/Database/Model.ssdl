@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PescadorDB.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PescadorDBStoreContainer">
+    <EntitySet Name="Configuration" EntityType="PescadorDB.Store.Configuration" store:Type="Tables" />
+    <EntitySet Name="Destinations" EntityType="PescadorDB.Store.Destinations" store:Type="Tables" />
+    <EntitySet Name="TruckDestinations" EntityType="PescadorDB.Store.TruckDestinations" store:Type="Tables" />
+    <EntitySet Name="Trucks" EntityType="PescadorDB.Store.Trucks" store:Type="Tables" />
+    <AssociationSet Name="DestinationRelation" Association="PescadorDB.Store.DestinationRelation">
+      <End Role="Destinations" EntitySet="Destinations" />
+      <End Role="TruckDestinations" EntitySet="TruckDestinations" />
+    </AssociationSet>
+    <AssociationSet Name="TruckRelation" Association="PescadorDB.Store.TruckRelation">
+      <End Role="Trucks" EntitySet="Trucks" />
+      <End Role="TruckDestinations" EntitySet="TruckDestinations" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Configuration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ServiceUserName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ServicePassword" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ServiceUrl" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="ServiceTimeout" Type="int" Nullable="false" />
+    <Property Name="ServiceRetrySeconds" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Destinations">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Destination" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TruckDestinations">
+    <Key>
+      <PropertyRef Name="TruckID" />
+      <PropertyRef Name="DestinationID" />
+    </Key>
+    <Property Name="TruckID" Type="int" Nullable="false" />
+    <Property Name="DestinationID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Trucks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Plate" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="DriveName" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="DriverDocumentNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriverMobilePhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="DateAdded" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="DateAssigned" Type="datetime" />
+    <Property Name="DestinationAssignedID" Type="int" />
+    <Property Name="AssignationID" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="DestinationRelation">
+    <End Role="Destinations" Type="PescadorDB.Store.Destinations" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TruckDestinations" Type="PescadorDB.Store.TruckDestinations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Destinations">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TruckDestinations">
+        <PropertyRef Name="DestinationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TruckRelation">
+    <End Role="Trucks" Type="PescadorDB.Store.Trucks" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TruckDestinations" Type="PescadorDB.Store.TruckDestinations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trucks">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TruckDestinations">
+        <PropertyRef Name="TruckID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

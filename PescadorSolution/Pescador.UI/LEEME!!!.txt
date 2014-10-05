@@ -1,0 +1,2 @@
+﻿Clave para el Certificado Digital: Pescador.UI_TemporaryKey.pfx es:
+dotSeven

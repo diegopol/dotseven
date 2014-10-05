@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PescadorDB" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="PescadorDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Destinations" EntityType="PescadorDB.Destination" />
+    <EntitySet Name="Trucks" EntityType="PescadorDB.Truck" />
+    <AssociationSet Name="TruckDestinations" Association="PescadorDB.TruckDestinations">
+      <End Role="Destination" EntitySet="Destinations" />
+      <End Role="Truck" EntitySet="Trucks" />
+    </AssociationSet>
+    <EntitySet Name="Configurations" EntityType="PescadorDB.Configuration" />
+  </EntityContainer>
+  <EntityType Name="Destination">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Destination1" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Trucks" Relationship="PescadorDB.TruckDestinations" FromRole="Destination" ToRole="Truck" />
+  </EntityType>
+  <EntityType Name="Truck">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Plate" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriveName" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriverDocumentNumber" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriverMobilePhone" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateAdded" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateAssigned" Precision="3" />
+    <Property Type="Int32" Name="DestinationAssignedID" />
+    <Property Type="String" Name="AssignationID" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Destinations" Relationship="PescadorDB.TruckDestinations" FromRole="Truck" ToRole="Destination" />
+  </EntityType>
+  <Association Name="TruckDestinations">
+    <End Type="PescadorDB.Destination" Role="Destination" Multiplicity="*" />
+    <End Type="PescadorDB.Truck" Role="Truck" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Configuration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="String" Name="ServiceUserName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ServicePassword" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ServiceUrl" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ServiceTimeout" Nullable="false" />
+    <Property Type="Int32" Name="ServiceRetrySeconds" Nullable="false" />
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>

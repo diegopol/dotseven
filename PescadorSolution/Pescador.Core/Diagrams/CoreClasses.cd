@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Pescador.Core.DictionaryExt&lt;T, TO&gt;">
+    <Position X="11" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DictionaryExt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pescador.Core.HtmlPage" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAEAAAAAAAIgAAAAAAEAAAA=</HashCode>
+      <FileName>HtmlPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pescador.Core.OfferPortering">
+    <Position X="11" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAIAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OfferPortering.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pescador.Core.OffersCollection">
+    <Position X="11" Y="3" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Pescador.Core.OffersCollection.EOfferResults">
+        <TypeIdentifier>
+          <NewMemberFileName>OffersCollection.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OffersCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pescador.Core.PeldarServicePage">
+    <Position X="7.5" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAQ=</HashCode>
+      <FileName>PeldarServicePage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Pescador.Core.Interfaces.IPeldarPage">
+    <Position X="3.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IPeldarPage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Pescador.Core.Interfaces.IHtmlPage">
+    <Position X="3.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IHtmlPage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
